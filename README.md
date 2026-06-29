@@ -253,7 +253,7 @@ fleetpulse/
 
 ---
 
-## Technical Highlights (for resume)
+## Technical Highlights
 
 - **Real-time geospatial pipeline** — built an end-to-end MQTT → NestJS → PostGIS → WebSocket → Leaflet pipeline processing 150+ GPS events/minute across 5 simulated vehicles on Indian road networks, with per-message processing latency tracked in PostgreSQL and surfaced in a live dashboard stats bar.
 
