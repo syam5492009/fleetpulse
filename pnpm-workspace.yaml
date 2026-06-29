@@ -1,0 +1,5 @@
+packages:
+  - 'apps/*'
+  - 'tools/*'
+allowBuilds:
+  '@nestjs/core': true

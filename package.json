@@ -1,0 +1,24 @@
+{
+  "name": "fleetpulse",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start":        "powershell -ExecutionPolicy Bypass -File fleetpulse.ps1 start",
+    "stop":         "powershell -ExecutionPolicy Bypass -File fleetpulse.ps1 stop",
+    "restart":      "powershell -ExecutionPolicy Bypass -File fleetpulse.ps1 restart",
+    "status":       "powershell -ExecutionPolicy Bypass -File fleetpulse.ps1 status",
+    "dev:backend":  "pnpm --filter @fleetpulse/backend start:dev",
+    "dev:frontend": "pnpm --filter @fleetpulse/frontend dev",
+    "dev:simulator":"pnpm --filter @fleetpulse/simulator start",
+    "build":        "pnpm --filter @fleetpulse/backend build && pnpm --filter @fleetpulse/frontend build",
+    "infra:up":     "docker compose up mosquitto postgres redis -d",
+    "infra:down":   "docker compose down"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8"
+  },
+  "dependencies": {
+    "pnpm": "^11.9.0"
+  }
+}

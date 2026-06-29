@@ -1,0 +1,47 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+
+# ── Build outputs ─────────────────────────────────────────────────────────────
+dist/
+build/
+.next/
+out/
+
+# ── TypeScript incremental cache ───────────────────────────────────────────────
+*.tsbuildinfo
+
+# ── Environment — NEVER commit real credentials ───────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Runtime / orchestration ───────────────────────────────────────────────────
+.fleetpulse.pids
+
+# ── Docker volumes (local data) ───────────────────────────────────────────────
+postgres_data/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+pnpm-debug.log*
+
+# ── OS / editor artefacts ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── npm lockfile (project uses pnpm exclusively) ──────────────────────────────
+package-lock.json
+
+# ── Next.js ───────────────────────────────────────────────────────────────────
+.vercel/
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+coverage/
+.nyc_output/

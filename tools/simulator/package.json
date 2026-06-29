@@ -1,0 +1,11 @@
+{
+  "name": "@fleetpulse/simulator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mqtt": "^5.10.1"
+  }
+}
